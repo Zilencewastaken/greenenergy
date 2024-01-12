@@ -3,10 +3,21 @@
 <head>
   <link rel="stylesheet" href="styles.css">
 <style>
-    body {background-color: rgb(255, 255, 255);}
+    body {
+      height: 3000px;
+    }
     h1 {color: black;}
     p {color: black;}
-    button {color: black;}
+    .button {color: black;} 
+    .button {align-self: center;}
+
+    .parallax {background-image: url(https://media.wired.com/photos/61e9e944844ec857b7138316/4:3/w_1800,h_1350,c_limit/Science_UK_GettyImages-1237492583.jpg);
+      min-height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
     .topnav {
       background-color: black;
@@ -20,6 +31,7 @@
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
+      margin-left: 20px;
       }
 
 
@@ -47,14 +59,38 @@
     </div>
 
 
-
 <h1>Green Energy</h1>
 
-<button id="CHHSCB" class="float-left submit-button"> CHHSCB</button>
-<script type="text/javascript">
-    document.getElementById("CHHSCB").onclick = function () 
-    {location.href = "https://www.bit.ly/CHHSCB";};
-</script>
+<style>
+  .container {
+    height: 200px;
+    position: relative;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  </style>
+  
+  <div class="parallax">
+    <div class="container">
+      <p> bitch</p>
+      </div>
+  </div>
+  <div class="container">
+    <div class="center">
+      <button id="CHHSCB" class="float-left submit-button"> CHHSCB </button>
+      <script type="text/javascript">
+          document.getElementById("CHHSCB").onclick = function () 
+          {location.href = "https://www.bit.ly/CHHSCB";};
+      </script>    
+    </div>
+  </div>
 
 
 <p>^This butt on will lead you to the cacnon blast mhmm!</p>
