@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Home Solutions - Information</title>
-    <link rel="stylesheet" href="style.css">
-   
-</head>
-<body>
-
-    <header>
-        <h1>Green Home Solutions</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <!--Link to the css file-->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Link to the JavaScript file-->
+        <script src="js/script.js" defer></script>
+        
+        <header>
+            <h1>Green Home Solutions</h1>
+        </header>
+   </head>
 
     <nav>
-        <a href="index.html#home">Home</a>
+        <a href="index.html">Home</a>
         <a href="information.html">Information</a>
         <a href="cost.html">Cost</a>
         <a href="tax.html">Tax Rebates</a>
-        <a href="practices.html">Practices</a>
-    </nav>    
+    </nav>
 
+<body>
     <section id="information">
         <h2>Information about Green Energy</h2>
 
@@ -45,50 +45,27 @@
             <li>Creates Job Opportunities in the Renewable Energy Sector</li>
             <li>Minimizes Environmental Impact</li>
         </ul>
-
-        <h3>How to Incorporate Green Energy at Home:</h3>
-
-        <p>1. Install solar panels on your roof to harness solar energy.</p>
-        <p>2. Use energy-efficient appliances and light bulbs.</p>
-        <p>3. Consider investing in a small wind turbine for your property.</p>
-        <p>4. Explore geothermal heating and cooling systems for your home.</p>
-        <p>5. Reduce energy consumption by practicing energy conservation habits.</p>
-        
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>People Also Ask</title>
-           
-        </head>
-        <body>
-        
-            <!-- FAQ container -->
-            <div class="faq-container">
-                <!-- FAQ question with corresponding answer -->
-                <div class="faq-question">
-                    What is renewable energy?
-                    <!-- FAQ answer (initially hidden) -->
-                    <div class="faq-answer">Renewable energy is energy that comes from resources that are naturally replenished...</div>
-                </div>
-        
-                <!-- Another FAQ question and answer -->
-                <div class="faq-question">
-                    How does solar energy work?
-                    <div class="faq-answer">Solar energy works by capturing the sun's energy and converting it into electricity...</div>
-                </div>
-        
-                <!-- Add more questions and answers as needed -->
-            </div>
-        
-        </body>
-        </html>
-        
     </section>
 
-    <footer>
-        <p>&copy; 2024 Green Home Solutions</p>
-    </footer>
+    <div class="faq-container">
+        <div class="faq-question" onclick="toggleAnswer(1)">What is Renewable Energy?</div> <!--When clicked it causes the box to drop down instead of the immediate opening-->
+        <div class="faq-answer" id="answer1">Renewable energy is energy that comes from resources that are naturally replenished...</div>
+
+        <div class="faq-question" onclick="toggleAnswer(2)">How does Solar Energy Work?</div>
+        <div class="faq-answer" id="answer2">Solar energy works by capturing the sun's energy and converting it into electricity...</div>
+
+        <div class="faq-question" onclick="toggleAnswer(3)">Are there Cons?</div>
+        <div class="faq-answer" id="answer3">
+            <ul>
+            <li>Solar & Wind depend on Weather Condtions</li>
+            <li>Batteries used to store green energy may have limitations in terms of capacity, efficiency, and environmental impact. </li>
+            <li>High Initial Cost</li>
+            <li>Solar & Wind Farms require Significant Land Areas (Habitat Disruption)</li>
+            <li>Lower Energy Density Compared to Fossil Fuel, This means that more land or equipment may be required to generate the same amount of energy.</li>
+        </ul>
+    </div>
+
+
 
 </body>
 </html>
